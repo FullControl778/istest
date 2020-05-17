@@ -1,0 +1,226 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .nav li > form > button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+.picture__view-container {
+    display: flex;
+    justify-content: center;
+}
+
+.picture__view-img {
+    max-width: 100%;
+}
+
+.picture__view-timestamp {
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.masonry-layout {
+    margin-top: 15px;
+    column-count: 3;
+    column-gap: 0;
+}
+
+.masonry-layout-panel {
+    break-inside: avoid;
+}
+
+.masonry-layout-panel__content {
+    border-radius: 10px;
+}
+
+.picture__img:hover {
+    box-shadow: 0 0 8px #0f0f0f;
+}
+
+.picture__img {
+    margin: 8px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.albums-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album {
+    border-radius: 8%;
+    height: fit-content;
+    display: flex;
+    margin: 5%;
+    width: auto;
+    text-align: center;
+
+}
+
+.album:hover {
+    box-shadow: 0 0 8px #0f0f0f;
+    text-shadow:0 0 3px lightblue ;
+}
+
+
+.album a {
+    text-decoration: none;
+}
+
+.album__preview {
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.album__preview-img {
+    width: 100px;
+    height: 100px;
+}
+
+.album__name {
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+
+.btn__back {
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: white;
+    background: #337ab7;
+    font-size: 1.3em;
+}
+
+.btn__back:hover {
+    color: white;
+    text-shadow:0 0 3px lightblue;
+    background: #23527c;
+}
